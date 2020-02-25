@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Prescription">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp">
+
+
+        <Button
+
+            android:id="@+id/cambt"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="10dp"
+            android:foreground="@drawable/camera2"
+            android:onClick="Event"
+            android:text="처방전 찍기" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:background="#0D03A9F4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="처방전 추가"
+                android:textColor="@color/blue1"/>
+            <Button
+                android:background="#0D03A9F4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세 보기"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/blue1"
+                android:gravity="center"
+                android:id="@+id/more"/>
+        </LinearLayout>
+
+
+       <!-- <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="149dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="처방전 추가"
+            android:textColor="#3F51B5"
+            android:textSize="24sp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#888888"
+            tools:layout_marginBottom="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:layout_weight="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        <!--<Button
+
+            android:id="@+id/prescription_button1"
+            android:layout_width="350dp"
+            android:layout_height="195dp"
+            android:layout_marginLeft="33dp"
+            android:text="처방전 정보" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#888888"
+            tools:layout_marginBottom="5dp" />
+
+        <Button
+
+            android:id="@+id/prescription_button2"
+            android:layout_width="350dp"
+            android:layout_height="195dp"
+            android:layout_marginLeft="33dp"
+            android:text="처방전 정보" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#888888"
+            tools:layout_marginBottom="5dp" />-->
+
+        
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

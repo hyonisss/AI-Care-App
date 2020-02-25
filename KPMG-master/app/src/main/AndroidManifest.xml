@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicine_map">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        android:label="AICare">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity_Login"
+            android:label="AICare"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity_Home"
+            android:label="　　　　　　　AI Care">
+
+        </activity>
+        <activity android:name=".MainActivity_Camera"
+            android:label="사진 검색"
+            android:parentActivityName=".MainActivity_Home">
+        </activity>
+        <activity android:name=".CameraActivity"
+            android:label="처방전 추가"
+
+            android:parentActivityName=".MainActivity_Prescription"
+            />
+        <activity android:name=".MainActivity_Calendar"
+            android:label="AI Care 달력"
+            android:parentActivityName=".MainActivity_Home"
+            />
+        <activity android:name=".MainActivity_Prescription"
+            android:label="처방전 내역"
+            android:parentActivityName=".MainActivity_Home"
+            />
+        <activity android:name=".MainActivity_Prescription_detail"
+            android:label="처방전 상세">
+
+        </activity>
+        <activity android:name=".MainActivity_Result_Caution"
+            android:parentActivityName=".MainActivity_Camera"
+            android:label="검색 결과"
+            />
+        <activity android:name=".MainActivity_Result_DUR"
+            android:parentActivityName=".MainActivity_Camera"
+            android:label="검색 결과">
+
+        </activity>
+        <activity android:name=".MainActivity_Fragment"
+            android:parentActivityName=".MainActivity_Camera"
+            android:label="검색 결과"
+            />
+        <activity android:name=".MainActivity_Result_Efficient"
+            android:label="검색 결과"
+            android:parentActivityName=".MainActivity_Camera"
+            />
+        <activity android:name=".MainActivity_Result_Identification"
+            android:label="검색 결과"
+            android:parentActivityName=".MainActivity_Camera"
+            />
+        <activity android:name=".MainActivity_Result_information"
+            android:label="검색 결과"
+            android:parentActivityName=".MainActivity_Camera"
+            />
+        <activity android:name=".MainActivity_Result_Remedy"
+            android:label="검색 결과"
+            android:parentActivityName=".MainActivity_Camera"
+            />
+
+        <activity android:name=".MainActivity_Result_Usage"
+            android:label="검색 결과"
+            android:parentActivityName=".MainActivity_Camera"
+            />
+        <activity android:name=".MainActivity_Sign"
+            android:label="회원 가입">
+
+        </activity>
+        <activity android:name=".MainActivity_Voice"
+            android:label="음성 인식"
+            android:parentActivityName=".MainActivity_Home"
+
+            />
+        <activity android:name=".MainActivity_Maps"
+            android:parentActivityName=".MainActivity_Home"
+
+            >
+
+        </activity>
+        <provider
+            android:authorities="com.example.medicine_map"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Result_Caution">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/blue1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/caution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1. 경고"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/caution_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="이 약은 기형아 유발성이 매우 높다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/dont_inject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="2. 다음 환자에는 투여하지 말 것"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dont_inject_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="임부ㆍ수유부 및 임신가능성이 있는 여성 환자, 신장 및 간 장애 환자" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/inject_carefully"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="3. 다음 환자에는 신중히 투여할 것"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/inject_carefully_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="비타민 A 과다증 환자" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/reaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="4. 이상반응"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/reaction_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="점막건조증,구순염,근육통,두통,안검염,안구자극,비특이적 위장관계" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/general_caution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="5. 일반적 주의"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/general_caution_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="치료초기 단기간 동안 증상이 악화되는 경우가 있으나 회복된다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/interaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="6. 상호작용"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/interaction_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="비타민 A와의 병용은 비타민 A 과다증을 증강시키므로 피한다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/Pregnant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="7. 임부에 대한 투여"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Pregnant_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="임부 또는 임신 가능성이 있는 모든 여성에게 투여 금기이다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/lactate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="8. 수유부에 대한 투여"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/lactate_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="지방친화력이 강하여 모유중으로 이행되므로 수유부에는 금기다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/kid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="9. 소아에 대한 투여"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kid_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="이 약은 사춘기 전(12세 미만의 소아) 여드름에 사용하지 않는다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/older"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="10. 고령자(노인)에 대한 투여"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/older_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="약물유발성 관절통의 위험이 증가될 수 있으므로 주의한다." />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/Clinical_test_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="11. 임상검사치에 대한 영향"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Clinical_test_value_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="중성지방 및 콜레스테롤수치 상승이 관찰된 바 있으나, 회복된다." />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/excess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="12. 과량투여시의 처치"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/excess_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="부주의한 과량투여시 비타민 A 과다증이 나타날 수 있다." />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="13. 보관 및 취급상의 주의사항"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/storage_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="직사광선을 피하여, 소아의 손이 닿지 않는 곳에 보관한다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#00FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/photofinder_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="245dp"
+
+                android:src="@drawable/photofinder" />
+
+            <ImageButton
+                android:id="@+id/Calendar_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:src="@drawable/calendar" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Sort_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="172dp"
+                android:layout_marginLeft="3dp"
+                android:onClick="Listener4"
+                android:src="@drawable/pharmacy" />
+
+            <ImageButton
+                android:id="@+id/Prescription_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+
+                android:src="@drawable/prescription" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/Voice_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="23dp"
+            android:background="#00FFFFFF"
+
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/voice" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

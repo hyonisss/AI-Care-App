@@ -1,0 +1,425 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/activity_backkey" />
+
+        <Button
+            android:id="@+id/pharmacy_night"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="155dp"
+
+            android:background="@drawable/button_night"
+            android:onClick="nightClick"
+            android:text="심야" />
+
+        <Button
+            android:id="@+id/pharmacy_holiday"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/button_holiday"
+            android:onClick="holiClick"
+            android:text="공휴일" />
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        tools:context=".MapsActivity" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="혜화약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                     <ImageButton
+                        android:id="@+id/phar_first_tel"
+                        android:onClick="Listener2"
+                        android:layout_width="40dp"
+                         android:layout_marginLeft="200dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:id="@+id/phar_first_map"
+                        android:onClick="Listener3"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+
+                    </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 혜화로 8, (혜화동)"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 9시"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="건강약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/phar_second_tel"
+                        android:onClick="Listener2"
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:id="@+id/phar_second_map"
+                        android:onClick="Listener3"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 혜화로 2, 1층 (혜화동)"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 7시"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="글로리아 약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/phar_third_tel"
+                        android:onClick="Listener2"
+                        android:layout_marginLeft="165dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:id="@+id/phar_third_map"
+                        android:onClick="Listener3"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 평창문화로 75"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 8시"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="경일약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/phar_fourth_tel"
+                        android:onClick="Listener2"
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:id="@+id/phar_fourth_map"
+                        android:onClick="Listener3"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 평창문화로 35 (평창동)"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 9시 30분"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="국화약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 평창11길 3"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 7시 30분"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="마이팜약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:layout_marginLeft="182dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 통일로16길 2 (무악동)"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 6시 30분"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#eeeeee"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:text="정원약국"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                    <ImageButton
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_menu_call" />
+                    <ImageButton
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="서울특별시 종로구 통일로 262, 4호 1층 (무악동)"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평일 오전 9시 ~ 오후 8시 30분"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

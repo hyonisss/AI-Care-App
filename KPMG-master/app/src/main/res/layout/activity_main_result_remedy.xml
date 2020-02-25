@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Result_Remedy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/blue1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Medicine_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="약 설명"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Medicine_instruction_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text=" 피부 각질층을 얇게하고 피지선의 활성을 억제하여 여드름을 치료하는 약입니다." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/dont_inject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="약 복용법"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dont_inject_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text=" 이 약에 대한 치료효과 및 이상반응은 용량 의존적이므로, 환자의 증상 및 상태에 따라 용량을 적절히 조절한다.
+\n· 초기용량
+
+\n 이소트레티노인으로서 1일 체중 kg당 0.5mg을 반응을 관찰하며 투여한다.
+
+\n· 유지용량
+
+\n 이 약으로서 1일 체중 kg당 0.5~1.0mg을 투여하며, 중증의 여드름 환자에게는 2.0mg까지 증량할 수 있다.
+
+\n 저용량의 경우는 1일 1회, 고용량의 경우는 1일 2회 분할하여 식사와 함께 복용한다." />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

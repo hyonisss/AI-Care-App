@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="40dp"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/Medicine_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:text="이메일"
+        android:textColor="@color/blue1"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/Edit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:text="비밀번호"
+        android:textColor="@color/blue1"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:hint="password" />
+
+    <Button
+        android:id="@+id/Button_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_login"
+        android:text="login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_login"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Result_DUR">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/blue1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Medicine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:text="이소티논"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="대웅제약" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="#1EAD9595"
+                android:text="{ DUR }"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/combined_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="병용금기"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:text="약"
+                    android:textAlignment="center"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:text="분류"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:text="부작용"
+                    android:gravity="center"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_join_1"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joinclass_1"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joininfo_1"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_join_2"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joinclass_2"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joininfo_2"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_join_3"
+                    android:textAlignment="center"
+                    android:layout_width="84dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joinclass_3"
+                    android:gravity="center"
+                    android:layout_width="84dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_joininfo_3"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="연령금기"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text= "없음"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/pregnant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="임부금기"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pregnant_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="명확한 임상적 근거 또는 사유가 있는 경우 부득이하게 사용" />
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:text="등급"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:text="제품 성분"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="임부금기 내용"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_preg_1"
+                    android:text="1등급"
+                    android:layout_width="54dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:textAlignment="center"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_pregingr_1"
+                    android:gravity="center"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="Isotretinol"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#999797" />
+
+                <TextView
+                    android:id="@+id/dur_preginfo_1"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="최기형성이 높음"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:background="#999797" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="306dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:background="#949494" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/older"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="노인주의"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/older_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="없음" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="용량 / 투여기간주의"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/capacity_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="1일 최대 투여량 : (1250mg)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/distribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="분할주의"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/distribution_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="없음" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="#949494"
+                tools:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

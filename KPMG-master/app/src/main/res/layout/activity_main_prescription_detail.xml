@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Prescription_detail"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/blue1"
+        >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <TextView
+        android:background="#eeeeee"
+        android:id="@+id/Disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="질환"
+        android:textColor="#3F51B5"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Disease_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="편도염"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/kind_of_medicine" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Medication_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:text="편도에 나타난 염증으로, 구개편도의 염증\n입니다, 급성으로 나타납니다"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <TextView
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="약국"
+        android:textColor="#3F51B5"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="국화 약국"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/phar_1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="영업시간   평일 오전 9시 ~ 오후 7시 30분\n전화번호   02 395 9105"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <TextView
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="병원"
+        android:textColor="#3F51B5"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="한사람의원"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_marginLeft="14dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/phar_2"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="영업시간   평일 오전 9시 ~ 오후 7시\n전화번호   02 363 9114"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />
+    <TextView
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="약제"
+        android:textColor="#3F51B5"
+        android:textSize="18dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#999797" />//////
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Medication_totalday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="총 투약일수 3일"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Medication_day_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:text="1일 남음"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/Medication_day_progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progress="66"
+                    android:indeterminateTint="@color/blue1"
+                    android:theme="@style/progress_color_under_api2"
+                    android:max="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:text="레녹스정 + 내복"
+                            android:textStyle="bold"
+                            android:textSize="18dp" />
+                        <ImageView
+                            android:layout_marginLeft="14dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/medicine1"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/Ingredient_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="만성 류마티스관절염, 요통 등\n증상의 소염ㆍ진통"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ProgressBar
+                        android:id="@+id/Ingredient_progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:progress="66"
+                        android:indeterminateTint="@color/blue1"
+                        android:theme="@style/progress_color_under_api2"
+                        android:max="100"
+                        android:layout_width="136dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="0.9" />
+
+                    <TextView
+                        android:id="@+id/Ingredient_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="0.1"
+                        android:padding="5dp"
+                        android:text="총 6정 / 2정 남음"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#dddddd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="30dp"
+                        android:backgroundTint="#dddddd"
+                        android:orientation="horizontal"
+                        android:weightSum="9">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="1회 투여량"
+                                android:textColor="#3F51B5"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="2정"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="투여 횟수"
+                                android:textColor="#3F51B5"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="3회"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="18dp"
+                            android:layout_weight="3"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/totalday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="총투약일"
+                                android:textColor="#3F51B5"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/totalday_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="3일"
+                                android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+       <View
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="#999797" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:layout_marginTop="6dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:text="총 투약일수 5일"
+                           android:textSize="15dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="130dp"
+                           android:text="2일 남음"
+                           android:textSize="13dp" />
+                   </LinearLayout>
+                   <ProgressBar
+                       style="?android:attr/progressBarStyleHorizontal"
+                       android:progress="60"
+                       android:indeterminateTint="@color/blue1"
+                       android:theme="@style/progress_color_under_api2"
+                       android:max="100"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginRight="30dp"
+                       android:layout_marginTop="4dp"
+                       android:layout_marginBottom="5dp"/>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"
+                       android:background="#dddddd" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <LinearLayout
+                           android:layout_marginTop="10dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:layout_marginLeft="30dp"
+                               android:text="페니라민정2mg"
+                               android:textStyle="bold"
+                               android:textSize="18dp" />
+                           <ImageView
+                               android:layout_marginLeft="14dp"
+                               android:layout_width="35dp"
+                               android:layout_height="35dp"
+                               android:src="@drawable/medicine2"/>
+                       </LinearLayout>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:text="코염, 코감기에 의한 재채기ㆍ콧물ㆍ기침,혈관운동성 \n부기"
+                           android:textSize="15dp" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="21dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="5dp"
+                       android:orientation="horizontal"
+                       android:weightSum="1">
+
+                       <ProgressBar
+                           style="?android:attr/progressBarStyleHorizontal"
+                           android:progress="66"
+                           android:indeterminateTint="@color/blue1"
+                           android:theme="@style/progress_color_under_api2"
+                           android:max="100"
+                           android:layout_width="136dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_weight="0.9" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:gravity="center_vertical"
+                           android:layout_marginLeft="3dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_weight="0.1"
+                           android:padding="5dp"
+                           android:text="총 6정 / 2정 남음"
+                           android:textSize="10dp" />
+                   </LinearLayout>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"
+                       android:background="#dddddd" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginRight="30dp"
+                       android:backgroundTint="#dddddd"
+                       android:orientation="horizontal"
+                       android:weightSum="9">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="1회 투여량"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:id="@+id/oneday_injection"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="2정"
+                               android:textSize="12dp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="투여 횟수"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="3회"
+                               android:textSize="12dp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="18dp"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="총투약일"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:layout_marginBottom="5dp"
+                               android:text="3일"
+                               android:textSize="12dp" />
+
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+       <View
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="#999797" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <LinearLayout
+                       android:layout_marginTop="6dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:text="총 투약일수 6일"
+                           android:textSize="15dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="130dp"
+                           android:text="3일 남음"
+                           android:textSize="13dp" />
+                   </LinearLayout>
+                   <ProgressBar
+                       style="?android:attr/progressBarStyleHorizontal"
+                       android:progress="50"
+                       android:indeterminateTint="@color/blue1"
+                       android:theme="@style/progress_color_under_api2"
+                       android:max="100"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginRight="30dp"
+                       android:layout_marginTop="4dp"
+                       android:layout_marginBottom="5dp"/>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"
+                       android:background="#dddddd" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <LinearLayout
+                           android:layout_marginTop="10dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:layout_marginLeft="30dp"
+                               android:text="투리온정"
+                               android:textStyle="bold"
+                               android:textSize="18dp" />
+                           <ImageView
+                               android:layout_marginLeft="14dp"
+                               android:layout_width="35dp"
+                               android:layout_height="35dp"
+                               android:src="@drawable/medicine3"/>
+                       </LinearLayout>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:text="다년성 알레르기성 비염, 만성 두드러기, 피부질환에\n 수반된 소양증(습진 피부염, 피부소양증, 양진)"
+                           android:textSize="15dp" />
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="21dp"
+                       android:layout_marginTop="2dp"
+                       android:layout_marginBottom="5dp"
+                       android:orientation="horizontal"
+                       android:weightSum="1">
+
+                       <ProgressBar
+                           style="?android:attr/progressBarStyleHorizontal"
+                           android:progress="66"
+                           android:indeterminateTint="@color/blue1"
+                           android:theme="@style/progress_color_under_api2"
+                           android:max="100"
+                           android:layout_width="136dp"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_weight="0.9" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:gravity="center_vertical"
+                           android:layout_marginLeft="3dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_weight="0.1"
+                           android:padding="5dp"
+                           android:text="총 6정 / 2정 남음"
+                           android:textSize="10dp" />
+                   </LinearLayout>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"
+                       android:background="#dddddd" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginRight="30dp"
+                       android:backgroundTint="#dddddd"
+                       android:orientation="horizontal"
+                       android:weightSum="9">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="1회 투여량"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="2정"
+                               android:textSize="12dp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="투여 횟수"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="3회"
+                               android:textSize="12dp" />
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginRight="18dp"
+                           android:layout_weight="3"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:text="총투약일"
+                               android:textColor="#3F51B5"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="10dp"
+                               android:layout_marginBottom="5dp"
+                               android:text="3일"
+                               android:textSize="12dp" />
+
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+       <View
+           android:layout_marginTop="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="#999797" />
+
+   </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
