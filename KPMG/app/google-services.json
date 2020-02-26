@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "681229795221",
+    "firebase_url": "https://kpmg-dd19f.firebaseio.com",
+    "project_id": "kpmg-dd19f",
+    "storage_bucket": "kpmg-dd19f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681229795221:android:57af00057629f6a494c09c",
+        "android_client_info": {
+          "package_name": "com.example.medicine_map"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681229795221-3uk8cro4u1vorfc1bq1g6ovlc0858vdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medicine_map",
+            "certificate_hash": "91b2cfd6710f6c66eddf0c886052793ed6023529"
+          }
+        },
+        {
+          "client_id": "681229795221-n6b593oaq1o3kesbqaefhk718e4te4vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFa0vuKJz2-GtiddZfLty3ukGMEu1amzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681229795221-n6b593oaq1o3kesbqaefhk718e4te4vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
