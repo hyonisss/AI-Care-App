@@ -38,5 +38,6 @@
  <li> Api : Google Cloud Speech To Text(STT) Api </li>
  Google Cloud Speech To Text(STT) Api 를 불러와 사용자의 음성 명령 및 그것을 제어하고, 콜센터의 오디오를 텍스트로 변환하는 작업을 하였습니다. 예를들어, '이소티논' 이라는 약의 이름을 음성으로 명령할 경우 약학정보원에 있는 해당 약에 대한 정보(용법, 효능, DUR)를 불러와 보여주는 Acitivy로 넘어가게 됩니다. 
  
+## 앱 사용법
 
-
+<li>  첫 로그인 화면에서 아이디: yeonuu717@gmail.com / 비밀번호 : 123456 으로 바로 로그인하셔도 됩니다. </li>
